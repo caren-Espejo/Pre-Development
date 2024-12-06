@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgb(98, 98, 177);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  max-width: 300px;
+  margin: 2rem auto;
+}
+
+.layout-grid .box {
+  border: 1px solid #000;
+}
+.layout-grid .blue {
+  background-color: #007acc;
+}
+.layout-grid .yellow {
+  background-color: #ffcc00;
+}
+.layout-grid .orange {
+  background-color: #ff6a00;
+}
+.layout-grid .empty {
+  background-color: white;
+  border: 1px dashed #000;
+}
+
+#layout2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    max-width: 300px;
+}
+#layout2 .blue {
+  grid-column: 1/3;
+  grid-row: 1/3; 
+  background-color: #007acc;
+}
+#layout2 .orange {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  background-color: #ff6a00;
+}
+#layout2 .yellow {
+  grid-column: 3/3;
+  grid-row: 2/4;
+  background-color: #ffcc00;
+}
+#layout2 .green {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background-color: #5dbb63;
+}
+
+#layout3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 3px;
+    border: 2px solid black;
+  }
+  #layout3 .box {
+    border: 3px solid red;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  #layout3 .box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  #layout3 .box:nth-child(1) {
+    grid-column: span 1;
+  }
+  #layout3 .box:nth-child(2) {
+    grid-column: span 1;
+  }
+  #layout3 .box:nth-child(3) {
+    grid-column: span 1;
+  }
+  #layout3 .box:nth-child(4) {
+    grid-column: span 1;
+  }
+  #layout3 .box:nth-child(5) {
+    grid-column: span 1 ;
+  }
+  #layout3 .box:nth-child(6) {
+    grid-column: span 1;
+  }
+  #layout3 .box:nth-child(7) {
+    grid-column: span 2;
+  }
+  #layout3 .box:nth-child(8) {
+    grid-column: span 1;
+  }
+  #layout3 .box:nth-child(9) {
+    grid-row: span 2;
+  }
+  #layout3 .box:nth-child(10) {
+    grid-column: span 2;
+    grid-row: span 2;;
+  }
+  #layout3 .box:nth-child(11) {
+    grid-column: span 1;
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
